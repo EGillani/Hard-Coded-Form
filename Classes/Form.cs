@@ -59,7 +59,7 @@ namespace Assi3 {
             return;
         }
 
-        public override bool HandleInput(string input)
+        public override bool HandleInput()
         {
             throw new NotImplementedException();
         }

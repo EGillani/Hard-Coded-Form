@@ -1,4 +1,8 @@
 ﻿
+
+
+using System;
+
 namespace Assi3.Classes.Decorators
 {
     class NumberValidator : FormComponent
@@ -18,14 +22,18 @@ namespace Assi3.Classes.Decorators
             return base._formComponent.GetValue();
         }
 
-        public override bool HandleInput(string input)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public override void SetValue(string value)
         {
             base._formComponent.SetValue(value);
+        }
+
+        public override bool HandleInput()
+        {
+            if (Int32.TryParse(this.GetValue(), out int result))
+                return true;
+            else
+                return false;
+
         }
     }
 }

@@ -24,38 +24,25 @@ namespace Assi3
         static void Main(string[] args)
         {
             Form form = new Form();
-            
-            form.AddComponent(new MinLengthValidator(new TextBox("Username"), 6));
-            form.AddComponent(
-                new CharacterValidator(
-                    new CharacterValidator(
-                        new TextBox("Email"), "@"
-                    ), "."
-                )
-            );
-            form.AddComponent(
-                new MinLengthValidator(
-                    new TextBox("Real Name"), 2
-                )
-            );
 
-            FormComponent password = new CharacterValidator(
-                new MinLengthValidator(
-                    new TextBox("Password"), 8
-                ), "!"
-            );
+            form.AddComponent(
+                new MinLengthValidator(new TextBox("Username"), 6));
+
+            form.AddComponent(
+                new CharacterValidator(new CharacterValidator(new TextBox("Email"), "@"), "."));
+
+            form.AddComponent(
+                new MinLengthValidator(new TextBox("Real Name"), 2));
+
+            FormComponent password = 
+                new CharacterValidator(new MinLengthValidator(new TextBox("Password"), 8), "!");
             form.AddComponent(password);
 
             form.AddComponent(
-                new ValueMatchValidator(
-                    new TextBox("Confirm Password"), password
-                )
-            );
+                new ValueMatchValidator(new TextBox("Confirm Password"), password));
+            
             form.AddComponent(
-                new NumberValidator(
-                    new TextBox("Age")
-                )
-            );
+                new NumberValidator(new TextBox("Age")));
 
             new StateContext().Run(form);
         }

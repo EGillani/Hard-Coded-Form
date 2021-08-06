@@ -22,9 +22,9 @@
             return this._value;
         }
 
-        public override bool HandleInput(string input)
+        public override bool HandleInput()
         {
-            throw new System.NotImplementedException();
+            return true; 
         }
 
         public override void SetValue(string value)

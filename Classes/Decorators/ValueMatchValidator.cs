@@ -2,9 +2,11 @@
 {
     class ValueMatchValidator : FormComponent
     {
-        public ValueMatchValidator(FormComponent formComponent1, FormComponent formComponent2) : base(formComponent1, formComponent2)
+        FormComponent _formComponent2; 
+        public ValueMatchValidator(FormComponent formComponent, FormComponent formComponent2) : base(formComponent, formComponent2)
         {
-            base._formComponent = formComponent1;
+            base._formComponent = formComponent;
+            this._formComponent2 = formComponent2;
         }
 
         public override string GetName()
@@ -17,14 +19,17 @@
             return base._formComponent.GetValue();
         }
 
-        public override bool HandleInput(string input)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public override void SetValue(string value)
         {
             base._formComponent.SetValue(value);
+        }
+
+        public override bool HandleInput()
+        {
+            if (this.GetValue().Equals(this._formComponent2.GetValue()))
+                return true;
+            else
+                return false; 
         }
     }
 }

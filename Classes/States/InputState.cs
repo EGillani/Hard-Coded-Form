@@ -7,7 +7,7 @@ namespace Assi3.Classes
     {
         private Form _form;
         string input;
-        bool keepRunning = true;
+        bool isValid = true;
 
         public InputState(Form form)
         {
@@ -23,24 +23,43 @@ namespace Assi3.Classes
             //iterate through all the components
             foreach(FormComponent comp in components)
             {
+                //print name of component
                 string componentName = comp.GetName();
                 Console.WriteLine(componentName + ":");
                 do
                 {
 
                     Console.Write("> ");
+                    //take in input from user 
                     input = Console.ReadLine();
-                    keepRunning = comp.HandleInput(input);
+                    
+                    //nested one 
+                    if(comp._formComponent != null)
+                    {
+                        //maybe move this into the set value FormComponent later for cleaner version
+                        comp._formComponent.SetValue(input);
+                        isValid = comp._formComponent.HandleInput();
+                        //print message 
+                        if (!isValid)
+                        {
+                            Console.WriteLine("Invalid Entry, try again:");
+                            continue; 
+                        }
 
-                    if(keepRunning == true)
-                        Console.WriteLine("Invalid shit");
-                    //is invalid input 
+                    }
 
+                    //current level set 
+                    comp.SetValue(input);
 
-                } while (keepRunning);
+                    //check if the value is valid
+                    isValid = comp.HandleInput();
 
-                //when its accurate set the value
-                comp.SetValue(input);
+                    //print message 
+                    if(!isValid)
+                        Console.WriteLine("Invalid Entry, try again:");
+
+                } while (!isValid);
+
             }
 
 
