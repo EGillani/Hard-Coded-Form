@@ -1,4 +1,6 @@
-﻿namespace Assi3.Classes
+﻿using System;
+
+namespace Assi3.Classes
 {
     public abstract class FormComponent
     {
@@ -7,8 +9,8 @@
         private string _requiredChar;
         private FormComponent _formComponent1;
         private FormComponent _formComponent2;
-        private string _name;
-        private string _value;
+        //private string _name;
+        //private string _value;
 
         public FormComponent()
         {
@@ -45,5 +47,6 @@
         public abstract string GetValue();
         public abstract void SetValue(string value);
 
+        public abstract bool HandleInput(string input);
     }
 }

@@ -19,6 +19,11 @@ namespace Assi3.Classes.Decorators
             return base._formComponent.GetValue();
         }
 
+        public override bool HandleInput(string input)
+        {
+            return false; 
+        }
+
         public override void SetValue(string value)
         {
            base._formComponent.SetValue(value);

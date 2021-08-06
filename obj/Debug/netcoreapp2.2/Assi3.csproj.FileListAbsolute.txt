@@ -15,10 +15,10 @@ C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Ass
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\bin\Debug\netcoreapp2.2\Assi3.runtimeconfig.dev.json
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\bin\Debug\netcoreapp2.2\Assi3.dll
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\bin\Debug\netcoreapp2.2\Assi3.pdb
-C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.csprojAssemblyReference.cache
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.AssemblyInfoInputs.cache
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.AssemblyInfo.cs
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.csproj.CoreCompileInputs.cache
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.dll
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.pdb
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.genruntimeconfig.cache
+C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.csprojAssemblyReference.cache

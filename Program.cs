@@ -25,11 +25,7 @@ namespace Assi3
         {
             Form form = new Form();
             
-            form.AddComponent(
-                new MinLengthValidator(
-                    new TextBox("Username"), 6
-                )
-            );
+            form.AddComponent(new MinLengthValidator(new TextBox("Username"), 6));
             form.AddComponent(
                 new CharacterValidator(
                     new CharacterValidator(

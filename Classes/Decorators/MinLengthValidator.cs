@@ -2,6 +2,8 @@
 {
     public class MinLengthValidator : FormComponent
     {
+        string requiredChar;
+        int minLength; 
         public MinLengthValidator(FormComponent formComponent, string requiredChar) : base(formComponent, requiredChar)
         {
             base._formComponent = formComponent;
@@ -15,6 +17,7 @@
         public MinLengthValidator(FormComponent formComponent, int minLength) : base(formComponent, minLength)
         {
             base._formComponent = formComponent;
+            this.minLength = minLength; 
         }
 
         public override string GetName()
@@ -30,6 +33,14 @@
         public override void SetValue(string value)
         {
             base._formComponent.SetValue(value);
+        }
+
+        public override bool HandleInput(string input)
+        {
+            if (input.Length < this.minLength)
+                return true; 
+            else
+                return false; 
         }
     }
 }

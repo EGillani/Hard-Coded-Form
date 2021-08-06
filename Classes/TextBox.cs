@@ -22,6 +22,11 @@
             return this._value;
         }
 
+        public override bool HandleInput(string input)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public override void SetValue(string value)
         {
             this._value = value;

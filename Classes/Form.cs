@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Assi3.Classes;
 
 namespace Assi3 {
-    class Form : FormComponent 
+    public class Form : FormComponent 
     {
         // this is the mediator
 
@@ -57,6 +57,11 @@ namespace Assi3 {
         public override void SetValue(string value)
         {
             return;
+        }
+
+        public override bool HandleInput(string input)
+        {
+            throw new NotImplementedException();
         }
     }
 }
