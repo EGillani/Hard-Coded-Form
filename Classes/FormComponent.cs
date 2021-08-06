@@ -39,9 +39,24 @@ namespace Assi3.Classes
             this._name = name;
         }
 
-        public abstract string GetName();
-        public abstract string GetValue();
-        public abstract void SetValue(string value);
+        public virtual string GetName()
+        {
+            return this._formComponent.GetName();
+        }
+
+        public virtual string GetValue()
+        {
+            return this._formComponent.GetValue();
+        }
+
+        public virtual void SetValue(string value)
+        {
+            this._formComponent.SetValue(value);
+        }
+
+        //public abstract string GetName();
+        //public abstract string GetValue();
+        //public abstract void SetValue(string value);
         public abstract bool HandleInput();
 
         public FormComponent GetFormComponent()

@@ -6,7 +6,7 @@
         private string _name;
         private string _value;
 
-        public TextBox(string name)
+        public TextBox(string name): base(name)
         {
             this._name = name;
             this._value = "";

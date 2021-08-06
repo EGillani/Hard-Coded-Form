@@ -9,16 +9,6 @@ namespace Assi3.Classes.Decorators
             this._requiredChar = requiredChar;
         }
 
-        public override string GetName()
-        {
-            return base._formComponent.GetName();
-        }
-
-        public override string GetValue()
-        {
-            return base._formComponent.GetValue();
-        }
-
         public override bool HandleInput()
         {
             if (this.GetValue().Contains(this._requiredChar))
@@ -27,9 +17,5 @@ namespace Assi3.Classes.Decorators
                 return false; 
         }
 
-        public override void SetValue(string value)
-        {
-           base._formComponent.SetValue(value);
-        }
     }
 }

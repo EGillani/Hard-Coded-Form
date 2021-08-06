@@ -34,13 +34,13 @@ namespace Assi3
             form.AddComponent(
                 new MinLengthValidator(new TextBox("Real Name"), 2));
 
-            FormComponent password = 
+            FormComponent password =
                 new CharacterValidator(new MinLengthValidator(new TextBox("Password"), 8), "!");
             form.AddComponent(password);
 
             form.AddComponent(
                 new ValueMatchValidator(new TextBox("Confirm Password"), password));
-            
+
             form.AddComponent(
                 new NumberValidator(new TextBox("Age")));
 

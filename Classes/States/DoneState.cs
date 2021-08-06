@@ -18,7 +18,7 @@ namespace Assi3.Classes
         {
             // if user input = print
             _form.Print();
-            Console.WriteLine("Type reset to reset, or ok to proceed");
+            Console.WriteLine("\nType reset to reset, or ok to proceed");
             do
             {
 
@@ -33,7 +33,7 @@ namespace Assi3.Classes
                 }
                 else if (input.Equals("ok"))
                 {
-                    Console.WriteLine("Type print to print the form, or exit to leave");
+                    Console.WriteLine("\nType print to print the form, or exit to leave");
                     while(true)
                     {
                         Console.Write("> ");
