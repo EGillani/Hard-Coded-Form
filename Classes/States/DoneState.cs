@@ -16,9 +16,10 @@ namespace Assi3.Classes
         }
         public void Run()
         {
+            Console.WriteLine("\nYou're done! To confirm, here's what you wrote:\n");
             // if user input = print
             _form.Print();
-            Console.WriteLine("\nType reset to reset, or ok to proceed");
+            Console.WriteLine("\nType reset to reset, or ok to proceed\n");
             do
             {
 
@@ -45,7 +46,7 @@ namespace Assi3.Classes
                         }
                         else if (input.Equals("exit"))
                         {
-                            System.Environment.Exit(1);
+                            System.Environment.Exit(0);
                         }
 
                     }

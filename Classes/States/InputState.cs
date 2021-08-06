@@ -32,22 +32,6 @@ namespace Assi3.Classes
                     Console.Write("> ");
                     //take in input from user 
                     input = Console.ReadLine();
-                    
-                    //nested one 
-                    if(comp.GetFormComponent() != null)
-                    {
-                        //maybe move this into the set value FormComponent later for cleaner version
-                        comp.GetFormComponent().SetValue(input);
-                        isValid = comp.GetFormComponent().HandleInput();
-                        //print message 
-                        if (!isValid)
-                        {
-                            Console.WriteLine("Invalid Entry, try again:");
-                            continue; 
-                        }
-
-                    }
-
                     //current level set 
                     comp.SetValue(input);
 
@@ -61,7 +45,6 @@ namespace Assi3.Classes
                 } while (!isValid);
 
             }
-
 
             // when input has been processed, switch states
             _form.SetState(new DoneState(_form));

@@ -4,7 +4,6 @@ namespace Assi3.Classes
 {
     public abstract class FormComponent
     {
-        //fix later and that means update the SetValue function 
         protected FormComponent _formComponent;
         protected int _minLength;
         protected string _requiredChar;
@@ -38,7 +37,10 @@ namespace Assi3.Classes
         {
             this._name = name;
         }
-
+        public FormComponent GetFormComponent()
+        {
+            return this._formComponent;
+        }
         public virtual string GetName()
         {
             return this._formComponent.GetName();
@@ -52,17 +54,10 @@ namespace Assi3.Classes
         public virtual void SetValue(string value)
         {
             this._formComponent.SetValue(value);
+            if (this._formComponent._formComponent != null)
+                this._formComponent._formComponent.SetValue(value);
         }
 
-        //public abstract string GetName();
-        //public abstract string GetValue();
-        //public abstract void SetValue(string value);
         public abstract bool HandleInput();
-
-        public FormComponent GetFormComponent()
-        {
-            return this._formComponent;
-        }
-        
     }
 }

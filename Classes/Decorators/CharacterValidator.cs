@@ -11,7 +11,13 @@ namespace Assi3.Classes.Decorators
 
         public override bool HandleInput()
         {
-            if (this.GetValue().Contains(this._requiredChar))
+           bool isValid  = false;
+            if (this.GetFormComponent() != null)
+                isValid = this.GetFormComponent().HandleInput();
+            else
+                isValid = true; 
+
+            if (this.GetValue().Contains(this._requiredChar) && isValid == true)
                 return true;
             else
                 return false; 

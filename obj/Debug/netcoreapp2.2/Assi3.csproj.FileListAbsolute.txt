@@ -21,4 +21,3 @@ C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Ass
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.dll
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.pdb
 C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.genruntimeconfig.cache
-C:\Users\erajg\OneDrive\Desktop\INFO-3137(Software Design Patterns)\Project3\Assi3Starter\obj\Debug\netcoreapp2.2\Assi3.csprojAssemblyReference.cache

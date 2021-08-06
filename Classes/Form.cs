@@ -31,6 +31,7 @@ namespace Assi3 {
             {
                 Console.WriteLine($"{component.GetName()}: {component.GetValue()}");
             }
+            Console.WriteLine();
         }
 
         public List<FormComponent> GetComponentList()
