@@ -1,10 +1,8 @@
 ﻿
 namespace Assi3.Classes.Decorators
 {
-    class CharacterValidator : FormComponent
+    public class CharacterValidator : FormComponent
     {
-        string _requiredChar;
-
         public CharacterValidator(FormComponent formComponent, string requiredChar) : base(formComponent, requiredChar)
         {
             base._formComponent = formComponent;

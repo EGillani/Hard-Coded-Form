@@ -1,8 +1,7 @@
 ﻿namespace Assi3.Classes.Decorators
 {
-    class ValueMatchValidator : FormComponent
+    public class ValueMatchValidator : FormComponent
     {
-        FormComponent _formComponent2; 
         public ValueMatchValidator(FormComponent formComponent, FormComponent formComponent2) : base(formComponent, formComponent2)
         {
             base._formComponent = formComponent;

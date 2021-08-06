@@ -34,11 +34,11 @@ namespace Assi3.Classes
                     input = Console.ReadLine();
                     
                     //nested one 
-                    if(comp._formComponent != null)
+                    if(comp.GetFormComponent() != null)
                     {
                         //maybe move this into the set value FormComponent later for cleaner version
-                        comp._formComponent.SetValue(input);
-                        isValid = comp._formComponent.HandleInput();
+                        comp.GetFormComponent().SetValue(input);
+                        isValid = comp.GetFormComponent().HandleInput();
                         //print message 
                         if (!isValid)
                         {

@@ -56,11 +56,7 @@ namespace Assi3.Classes
                     Console.WriteLine("Invalid Entry, try again:");
                     isValid = false;
                 }
-
-
             } while (!isValid);
-            // if user input = exit
-            // then exit 
         }
     }
 }

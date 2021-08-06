@@ -1,13 +1,10 @@
-﻿
-
-
-using System;
+﻿using System;
 
 namespace Assi3.Classes.Decorators
 {
-    class NumberValidator : FormComponent
+    public class NumberValidator : FormComponent
     {
-        public NumberValidator(FormComponent formComponent) 
+        public NumberValidator(FormComponent formComponent) : base(formComponent)
         {
             base._formComponent = formComponent;
         }

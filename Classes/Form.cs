@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using Assi3.Classes;
 
 namespace Assi3 {
-    public class Form : FormComponent 
+    public class Form 
     {
-        // this is the mediator
-
         private IState _state; 
 
-        // should contain a list of FormComponents
         private List<FormComponent> _formComponents;
 
         public Form()
@@ -39,29 +36,6 @@ namespace Assi3 {
         public List<FormComponent> GetComponentList()
         {
             return _formComponents;
-        }
-
-
-        // is there a better way to deal with these functions below ...?
-
-        public override string GetName()
-        {
-            return null;
-        }
-
-        public override string GetValue()
-        {
-            return null;
-        }
-
-        public override void SetValue(string value)
-        {
-            return;
-        }
-
-        public override bool HandleInput()
-        {
-            throw new NotImplementedException();
         }
     }
 }
